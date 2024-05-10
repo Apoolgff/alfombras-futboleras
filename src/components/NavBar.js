@@ -6,11 +6,13 @@ import './NavBar.css';
 const Navbar = () => {
     return (
         <nav className="navbar">
+            {/*Seccion del Logo*/}
             <div className="logo">
                 <Link to="/">
                     <img src="/images/AF-Logo.png" alt=" AF Logo" />
                 </Link>
             </div>
+             {/*Seccion de Links*/}
             <div className="nav-links">
                 <Link to="/" className="nav-item">Inicio</Link>
                 <Link to="/galeria" className="nav-item">Galería</Link>
