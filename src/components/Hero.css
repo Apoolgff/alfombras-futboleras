@@ -1,6 +1,6 @@
 .left-content h1 {
     color: #0E2344;
-    
+    font-family: 'orbitron500';
     font-size: 55px;
     padding: 50px;
     letter-spacing: 3px;
@@ -17,6 +17,7 @@
     font-size: 20px;
     color: rgba(1, 4, 7, 1);
     line-height: 26.32px;
+    font-family: 'yaldevi500';
 }
 
 .hero {
@@ -44,9 +45,12 @@
     margin-top: 80px;
 }
 
-.bar{
+.bar-1, .bar-2{
     width: 518.66px;
     height: 53.73px;
+}
+.bar-2 {
+    transform: translateY(-2px);
 }
 
 .right-content {
@@ -84,7 +88,7 @@
         color: rgba(1, 4, 7, 1);
         line-height: 26.32px;
     }
-    .bar{
+    .bar-1, .bar-2{
         width: 259.33px;
         height: 26.86px;
     }

@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'orbitron500';
+  src: url('/public/fonts/orbitron/Orbitron-Medium.ttf');
+}
+@font-face {
+  font-family: 'orbitron600';
+  src: url('/public/fonts/orbitron/Orbitron-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'orbitron700';
+  src: url('/public/fonts/orbitron/Orbitron-Bold.ttf');
+}
+@font-face {
+  font-family: 'orbitron800';
+  src: url('/public/fonts/orbitron/Orbitron-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'orbitron900';
+  src: url('/public/fonts/orbitron/Orbitron-Black.ttf');
+}
+@font-face {
+  font-family: 'yaldevi500';
+  src: url('/public/fonts/yaldevi/Yaldevi-Medium.ttf');
+}
+@font-face {
+  font-family: 'yaldevi600';
+  src: url('/public/fonts/yaldevi/Yaldevi-SemiBold.ttf');
+}

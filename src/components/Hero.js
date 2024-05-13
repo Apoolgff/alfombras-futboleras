@@ -9,8 +9,8 @@ const Hero = () => {
 
                 <p>Cuéntanos qué diseño quieres y lo hacemos realidad</p>
                 <div className="bars">
-                    <img className="bar" src="/images/iconos/bar.webp" alt="bar" />
-                    <img className="bar" src="/images/iconos/bar2.webp" alt="bar2" />
+                    <img className="bar-1" src="/images/iconos/bar.webp" alt="bar" />
+                    <img className="bar-2" src="/images/iconos/bar2.webp" alt="bar2" />
                 </div>
             </div>
             <div className="right-content">

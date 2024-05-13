@@ -1,0 +1,28 @@
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #BC0A0A;
+    height: 257px;
+    font-family: 'orbitron700';
+}
+.services figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services figcaption {
+    color: #F2F6FA;
+    font-size: 16px;
+    text-align: center;
+}
+@media (max-width: 768px ) {
+    .services figcaption {
+        color: #F2F6FA;
+        font-size: 12px;
+    }
+    .services img {
+        width: 95px;
+    }
+}

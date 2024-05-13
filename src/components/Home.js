@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
+import Services from './Services';
 import './Home.css'
 
 const Home = () => {
@@ -110,6 +111,7 @@ const Home = () => {
                 <img src="/images/iconos/bubble3.webp" alt="review 3" className="review3"/>
                 </div>
             </div>
+            <Services/>
         </>
     )
 }

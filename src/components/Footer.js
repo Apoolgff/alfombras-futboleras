@@ -6,7 +6,12 @@ import './Footer.css';
 //despues agregare otro media query para que quede bien en todos y ajustare un poco mas las dimensiones si hace falta.
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
+            <div className="whatsapp">
+                <a className="whatsapp-link" href="https://wa.me/+5493516883680" >
+                    <img className="whatsapp-img" src="/images/iconos/Whatsapp.webp" alt="whatsapp" />
+                </a> 
+            </div>
             {/*Primera Seccion: Logo y Links*/}
             <div className="footer-logo-links">
                 <img src="/images/iconos/Logo.webp" alt="Logo" className="footer-logo" />
@@ -41,7 +46,7 @@ const Footer = () => {
                 <img src="/images/iconos/BallBlueFooter.webp" alt="Football" className="ball ball-back" />
                 <img src="/images/iconos/BallRedFooter.webp" alt="Football" className="ball ball-front" />
            </div>
-        </div>
+        </footer>
     );
 };
 

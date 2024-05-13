@@ -1,0 +1,128 @@
+
+.buy-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 257px;
+    font-size: 24px;
+    font-family: 'orbitron700';
+    color: #0E2344;
+}
+.buy-heading-bars{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+.buy-heading-bars img {
+    width: 259.33px;
+    height: 26.86px;
+}
+
+.fixed-bar{
+    transform: scaleX(-1) scaleY(-1) translateY(-50px);
+    z-index: -2;
+}
+.transitioned-bar {
+    z-index: -1;
+    transform: scaleX(-1) scaleY(-1) translateY(-38px);
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 244px;
+}
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step-one, .step-two, .step-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+
+}
+
+.time-line {
+    background: linear-gradient(#404F74, #0E2344);
+    width: 4px;
+    height: 100px;
+    border-radius: 10px;
+}
+.step-title {
+    color: #0E2344;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'orbitron700';
+}
+.step-description {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'yaldevi500';
+}
+@media (min-width: 768px) {
+    .step-one, .step-two, .step-three{
+        margin: 15px;
+        height: 184px;
+        width: 464px;
+    }
+    .step-title {
+        font-size: 35px;
+        margin-bottom: 24px;
+    }
+    .step-description {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .buy-heading-bars img {
+        width: 350px;
+        height: 36.26px;
+    }
+    .fixed-bar{
+        transform: scaleX(-1) scaleY(-1) translateY(-60px);
+        z-index: -2;
+    }
+    .transitioned-bar {
+        z-index: -1;
+        transform: scaleX(-1) scaleY(-1) translateY(-48px);
+    }
+}
+@media (min-width: 1366px ) {
+    .step-one, .step-two, .step-three{
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;*/
+        position: absolute;
+        height: 184px;
+        width: 464px;
+    }
+    .step-one, .step-three{
+        left: 132px
+    }
+    .step-two {
+        right: 132px;
+    }
+    .time-line {
+       /* background: linear-gradient(#404F74, #0E2344);
+        width: 4px;*/
+        height: 300px;
+        /*border-radius: 10px;*/
+    }
+    .buy-heading-bars img {
+        width: 518.66px;
+        height: 53.73px;
+    }
+    .fixed-bar{
+        transform: scaleX(-1) scaleY(-1);
+        z-index: -2;
+    }
+    .transitioned-bar {
+        z-index: -1;
+        transform: scaleX(-1) scaleY(-1) translateY(12px);
+    }
+}
