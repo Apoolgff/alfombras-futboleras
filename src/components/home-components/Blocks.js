@@ -1,7 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Blocks.css'
 
 const Blocks = () => {
+    const handleScrollTop = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                
+            });
+        }, );
+    };
   return (
     <div className="split-component">
                 {/*Primer bloque*/}
@@ -13,7 +22,7 @@ const Blocks = () => {
                         <p>únicas que no solo adornan tu hogar, sino que también cuentan</p>
                         <p>historias de partidos memorables, emociones intensas y momentos </p>
                         <p>inolvidables en cada fibra y color.</p>
-                        <button className='btn'>Como Comprar</button>
+                        <Link to="/como-comprar" onClick={handleScrollTop} className="btn">Cómo Comprar</Link>
                     </div>
                 </div>
 
@@ -41,7 +50,7 @@ const Blocks = () => {
                         <p>Desde escudos de equipos hasta diseños personalizados, estamos</p>
                         <p>aquí para convertir tus ideas en realidad y hacer de tu espacio un</p>
                         <p>lugar que refleje tu amor por el fútbol.</p>
-                        <button className='btn'>Contactanos</button>
+                        <Link to="/contacto" onClick={handleScrollTop} className="btn">Contacto</Link>
                     </div>
                 </div>
             </div>

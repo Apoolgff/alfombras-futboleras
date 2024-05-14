@@ -46,6 +46,8 @@
 }
 
 .btn {
+    text-decoration: none;
+    text-align: center;
     display: block;
     width: 200px;
     margin-top: 40px;

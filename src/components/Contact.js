@@ -11,37 +11,38 @@ const Contact = () => {
           <img className="transitioned-bar" src="/images/iconos/bar2.webp" alt="barra oscura" />
         </div>
       </div>
+      
       <div className="contact-container">
-        <div className='form-container'>
-          <img className="contact-icon" src="/images/iconos/ContactIcon.webp" alt="Imagen Usuario" />
-          <form>
-            <div className="form-row">
-              <div className="form-group">
-                <label for="firstName">Nombre:</label>
-                <input type="text" id="firstName" name="firstName" required />
-              </div>
-              <div className="form-group">
-                <label for="lastName">Apellido:</label>
-                <input type="text" id="lastName" name="lastName" required />
-              </div>
+            <div className='form-container'>
+                <img className="contact-icon" src="/images/iconos/ContactIcon.webp" alt="Imagen Usuario" />
+                <form>
+                    <div className="form-row">
+                        <div className="form-group">
+                            <label for="firstName">Nombre:</label>
+                            <input type="text" id="firstName" name="firstName" required />
+                        </div>
+                        <div className="form-group">
+                            <label for="lastName">Apellido:</label>
+                            <input type="text" id="lastName" name="lastName" required />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div className="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div className="form-group">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div className="form-group">
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
 
-        <div className="map-container">
-          <h3>Ubicacion : Córdoba, Argentina.</h3>
-          <iframe title="ubicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13631.792515850857!2d-64.3094371!3d-31.3328056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dfc8e24a273%3A0xf696b8e9235f484c!2sAlfombras%20Futboleras!5e0!3m2!1ses!2suy!4v1715713505246!5m2!1ses!2suy" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         
-        </div>
+            <div className="map-container">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13631.813438405925!2d-64.30947701567558!3d-31.332661150881098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dc08c855a1b%3A0x2da10c63c236df2c!2sPampa%20de%20los%20Guanacos%2010485%2C%20La%20Calera%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2suy!4v1715724351427!5m2!1ses!2suy"></iframe>
+                <h3>Ubicacion : Córdoba, Argentina.</h3>            
+            </div>
 
       </div>
     </section>
