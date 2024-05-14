@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import HowToBuy from './components/HowToBuy';
 import Gallery from "./components/Gallery";
+import Contact from './components/Contact';
 
 //Rutas del navbar  y footer entre  <Routes></Routes> (no las tenemos por ahora), puse texto mientras tanto.
 //Pueden salir advertencias al inspeccionar (ignorarlas), es porque aun no tenemos las rutas. 
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/galeria" element={<Gallery/>} />
-        <Route path="/nosotros" element={'Nosotros'} />
+        <Route path="/nosotros" element={<Contact/>} />
         <Route path="/como-comprar" element={<HowToBuy/>} />
       </Routes>
       <Footer/>
