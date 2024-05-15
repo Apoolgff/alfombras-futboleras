@@ -1,7 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Hgallery.css'
 
 const Hgallery = () => {
+    const handleScrollTop = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                
+            });
+        }, );
+    };
     const images = [
         { src: "/images/galeria/River.webp", title: "Escudo-River" },
         { src: "/images/galeria/Almagro.webp", title: "Escudo-Almagro" },
@@ -25,7 +34,7 @@ const Hgallery = () => {
                         ))}
                     </div>
                 </div>
-                <button className="more-btn">Ver toda la Galeria</button>
+                <Link to="/galeria"  className="more-btn" onClick={handleScrollTop}>Ver toda la Galeria</Link>
             </div>
   )
 }
