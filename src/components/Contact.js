@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="contact-container">
             <div className='form-container'>
                 <img className="contact-icon" src="/images/iconos/ContactIcon.webp" alt="Imagen Usuario" />
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
                     <div className="form-row">
                         <div className="form-group">
                             <label for="firstName">Nombre:</label>
@@ -27,6 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="form-group">
+                    <input type="hidden" name="access_key" value="aca va la contraseña que nos pase" />
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required />
                     </div>

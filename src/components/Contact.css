@@ -76,7 +76,7 @@ label {
 
 input[type="text"] {
     display: block;
-    
+    padding: 4px;
     height: 44px;
     border-radius: 5px;
     background-color: #E5F0FFB2;
@@ -84,7 +84,7 @@ input[type="text"] {
 }
 
 input[type="email"] {
-    
+    padding: 4px;
     height: 44px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -93,7 +93,7 @@ input[type="email"] {
 }
 
 textarea {
-    
+    padding: 4px;
     height: 132px;
     border-radius: 5px;
     margin-bottom: 20px;
