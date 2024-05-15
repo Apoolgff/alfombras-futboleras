@@ -27,7 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="form-group">
-                    <input type="hidden" name="access_key" value="aca va la contraseña que nos pase" />
+                    <input type="hidden" name="access_key" value="key" />{/*fb0b369c-a110-4553-a5ce-91e77eea6cc7*/}
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required />
                     </div>
@@ -41,7 +41,7 @@ const Contact = () => {
 
             <div className="map-container">
                 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13631.813438405925!2d-64.30947701567558!3d-31.332661150881098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dc08c855a1b%3A0x2da10c63c236df2c!2sPampa%20de%20los%20Guanacos%2010485%2C%20La%20Calera%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2suy!4v1715724351427!5m2!1ses!2suy"></iframe>
+                <iframe title='ubication' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13631.813438405925!2d-64.30947701567558!3d-31.332661150881098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dc08c855a1b%3A0x2da10c63c236df2c!2sPampa%20de%20los%20Guanacos%2010485%2C%20La%20Calera%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2suy!4v1715724351427!5m2!1ses!2suy"></iframe>
                 <h3>Ubicacion : Córdoba, Argentina.</h3>            
             </div>
 
