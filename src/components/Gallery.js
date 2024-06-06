@@ -11,24 +11,24 @@ import "./Gallery.css"
      
    
     const images = [
-        { src: "/images/galeria/RosarioCentral.webp", title: "Escudo-R.Central", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Independiente.webp", title: "Escudo-Independiente", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Almagro.webp", title: "Escudo-Almagro", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Chacarita.webp", title: "Escudo-Chacarita", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Racing.webp", title: "Escudo-Racing", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/River.webp", title: "Escudo-River", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/velez.webp", title: "Escudo-Velez", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/SanLorenzo.webp", title: "Escudo-San Lorenzo", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/alfombra1.webp", title: "Alfombra", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Andes.webp", title: "Escudo-Los andes", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Boca.webp", title: "Escudo-Boca", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Chicago.webp", title: "Escudo-Chicago", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Defbelgrano.webp", title: "Escudo-Def.Belgrano", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Docksud.webp", title: "Escudo-Docksud", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Indepte.webp", title: "Escudo-Independiente", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Lanus.webp", title: "Escudo-Lanús", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Mandiyu.webp", title: "Escudo-Mandiyú", description: "Medidas: 90x40cm" },
-        { src: "/images/galeria/Union.webp", title: "Escudo-Unión", description: "Medidas: 90x40cm" },
+        { src: "/images/galeria/RosarioCentral.webp", title: "Escudo-R.Central"},
+        { src: "/images/galeria/Independiente.webp", title: "Escudo-Independiente" },
+        { src: "/images/galeria/Almagro.webp", title: "Escudo-Almagro" },
+        { src: "/images/galeria/Chacarita.webp", title: "Escudo-Chacarita" },
+        { src: "/images/galeria/Racing.webp", title: "Escudo-Racing" },
+        { src: "/images/galeria/River.webp", title: "Escudo-River" },
+        { src: "/images/galeria/velez.webp", title: "Escudo-Velez"  },
+        { src: "/images/galeria/SanLorenzo.webp", title: "Escudo-San Lorenzo" },
+        { src: "/images/galeria/alfombra1.webp", title: "Alfombra" },
+        { src: "/images/galeria/Andes.webp", title: "Escudo-Los andes" },
+        { src: "/images/galeria/Boca.webp", title: "Escudo-Boca" },
+        { src: "/images/galeria/Chicago.webp", title: "Escudo-Chicago"},
+        { src: "/images/galeria/Defbelgrano.webp", title: "Escudo-Def.Belgrano" },
+        { src: "/images/galeria/Docksud.webp", title: "Escudo-Docksud" },
+        { src: "/images/galeria/Indepte.webp", title: "Escudo-Independiente" },
+        { src: "/images/galeria/Lanus.webp", title: "Escudo-Lanús" },
+        { src: "/images/galeria/Mandiyu.webp", title: "Escudo-Mandiyú" },
+        { src: "/images/galeria/Union.webp", title: "Escudo-Unión" },
 
 
     ];
@@ -57,7 +57,6 @@ import "./Gallery.css"
                                     <div key={index} className="g-gallery-item">
                                         <img src={image.src} alt={image.title} />
                                         <h3>{image.title}</h3>
-                                        <p>{image.description}</p>
                                     </div>
                                 ))}
                             </div>
