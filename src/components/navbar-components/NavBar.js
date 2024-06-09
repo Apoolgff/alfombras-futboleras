@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import { useMediaQuery } from 'react-responsive';
+import Menu from './Menu';
+import HamburgerMenu from './HamburgerMenu';
 
 //Navbar con el logo que dirige hacia el inicio y los 4 links
 const Navbar = () => {
+    const isDesktopOrLaptop = useMediaQuery({ minWidth: 900 });
     return (
         <header id="header" className="navbar">
             {/*Seccion del Logo*/}
@@ -13,13 +17,9 @@ const Navbar = () => {
                 </Link>
             </div>
              {/*Seccion de Links*/}
-            <nav className="nav-links">
-                <Link to="/" className="nav-item">Inicio</Link>
-                <Link to="/contacto" className="nav-item">Contacto</Link>
-                <Link to="/galeria" className="nav-item">Galería</Link>
-                <Link to="/nosotros" className="nav-item">Nosotros</Link>
-                <Link to="/como-comprar" className="nav-item">Cómo Comprar</Link>
-            </nav>
+             <div>
+            {isDesktopOrLaptop ? <Menu /> : <HamburgerMenu />}
+            </div>
         </header>
     );
 };

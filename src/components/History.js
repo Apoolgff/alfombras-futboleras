@@ -117,12 +117,12 @@ const History = () => {
                 </div>
                 <div className="history-section-blue">
                     <div className="history-content">
-                        <div className="history-heading-box-blue">
-                            <h3>¿Cómo es el proceso?</h3>   
+                        <div className="history-heading-box-blue" >
+                            <h3 id="como">¿Cómo es el proceso?</h3>   
                         </div>
                         <div className="history-split-component">
                             {/*bloque 4*/}
-                            <div className="history-block">
+                            <div className="history-block" >
                                 <div className="history-text-block history-text-block-left ">
                                     <p>El proceso de tufteado o tufting, se define básicamente como</p>
                                     <p>una técnica para fabricar textiles, en la cual se insertan hilos</p>

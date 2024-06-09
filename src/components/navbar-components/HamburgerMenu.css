@@ -1,0 +1,18 @@
+.burger {
+    background: none;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: #BC0A0A;
+}
+
+.burger-item {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'yaldevi500';
+    color: #0E2344;
+  }
+  
+  .burger-item:hover {
+    text-decoration: none; 
+  }

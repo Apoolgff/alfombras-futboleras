@@ -1,16 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Blocks.css'
 
 const Blocks = () => {
+    const navigate = useNavigate();
+
     const handleScrollTop = () => {
         setTimeout(() => {
             window.scrollTo({
                 top: 0,
-                
+                behavior: 'smooth',
             });
-        }, );
+        }, 0);
     };
+    const handleSmoothScroll = (e, id) => {
+        e.preventDefault();
+        navigate('/nosotros', { replace: true });
+    
+        setTimeout(() => {
+          const targetElement = document.getElementById(id);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth',
+            });
+          }
+        }, 300); // Ajusta este tiempo de espera según sea necesario
+      };
   return (
     <div className="split-component">
                 {/*Primer bloque*/}
@@ -35,7 +51,7 @@ const Blocks = () => {
                         <p>precisión y dedicación. Cada alfombra es meticulosamente tejida</p>
                         <p>para ofrecerte no solo un producto estético, sino también duradero,</p>
                         <p>resistente y capaz de resistir el paso del tiempo.</p>
-                        <button className='btn'>Como lo hacemos</button>
+                        <Link to="/nosotros" onClick={(e) => handleSmoothScroll(e, 'como')} className="btn">Como lo hacemos</Link>
                     </div>
                     <img src="/images/galeria/image11.webp" alt="Copa" className="image-block" />
                 </div>
