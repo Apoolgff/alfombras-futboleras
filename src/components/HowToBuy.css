@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     height: 257px;
+    
+}
+.buy-heading h1 {
     font-size: 24px;
     font-family: 'orbitron700';
     color: #0E2344;

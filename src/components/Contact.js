@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section>
       <div className="buy-heading">
-        <h3>Contactame</h3>
+        <h1>Contactame</h1>
         <div className="buy-heading-bars">
           <img className="fixed-bar" src="/images/iconos/bar.webp" alt="barra clara" />
           <img className="transitioned-bar" src="/images/iconos/bar2.webp" alt="barra oscura" />

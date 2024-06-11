@@ -47,7 +47,7 @@ const Footer = () => {
 
             {/*Tercera Seccion: Texto */}
             <div className="footer-text">
-                <p>ALFOMBRAS FUTBOLERAS</p>
+                <h3>ALFOMBRAS FUTBOLERAS</h3>
             </div>
 
             {/*Imagenes de Pelotas*/}

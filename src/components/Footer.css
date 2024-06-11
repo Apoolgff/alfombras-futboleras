@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.footer-text p {
+.footer-text h3 {
     font-size: 16px;
     line-height: 20.06px;
     font-family: 'orbitron600';
@@ -135,7 +135,7 @@
         justify-content: flex-end;
     }
 
-    .footer-text p {
+    .footer-text h3 {
         font-size: 12px;
         margin-right: 20px;
     }

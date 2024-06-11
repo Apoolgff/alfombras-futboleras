@@ -31,3 +31,7 @@
   font-family: 'yaldevi600';
   src: url('/public/fonts/yaldevi/Yaldevi-SemiBold.ttf');
 }
+
+p {
+  font-family: 'yaldevi500';
+}
