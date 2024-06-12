@@ -51,33 +51,3 @@ export default function HamburgerMenu() {
     </div>
   );
 }
-
-/*import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './HamburgerMenu.css'
-const HamburgerMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <div>
-            <button className='burger' onClick={toggleMenu}>
-                &#9776;
-            </button>
-            {isOpen && (
-                 <nav className="burger-links">
-                    <Link to="/" className="burger-item">Inicio</Link>
-                    <Link to="/contacto" className="burger-item">Contacto</Link>
-                    <Link to="/galeria" className="burger-item">Galería</Link>
-                    <Link to="/nosotros" className="burger-item">Nosotros</Link>
-                    <Link to="/como-comprar" className="burger-item">Cómo Comprar</Link>
-                </nav>
-            )}
-        </div>
-    );
-};
-
-export default HamburgerMenu;*/

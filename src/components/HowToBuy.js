@@ -25,7 +25,7 @@ const HowToBuy = () => {
                 <div className="time-line">
                 </div>
             </div>
-            <div div className="steps-container">
+            <div className="steps-container">
                 <img src="/images/iconos/figureDotted.webp" alt="people conecting" />
                 <div className="step-two">
                     <h2 className='step-title'>2. Contáctanos</h2>
@@ -38,7 +38,7 @@ const HowToBuy = () => {
                 <div className="time-line">
                 </div>
             </div>
-            <div div className="steps-container">
+            <div className="steps-container">
             <img src="/images/iconos/checkmarkBubble.webp" alt="people conecting" />
                 <div className="step-three">
                     <h2 className='step-title'>3. Listo!</h2>

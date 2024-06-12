@@ -55,7 +55,7 @@ import "./Gallery.css"
                             <div className="g-gallery-grid">
                                 {images.slice(0, visibleImages).map((image, index) => (
                                     <div key={index} className="g-gallery-item">
-                                        <img src={image.src} alt={image.title} />
+                                        <img src={image.src} alt={image.title} loading="lazy" />
                                         <h3>{image.title}</h3>
                                     </div>
                                 ))}

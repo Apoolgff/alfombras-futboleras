@@ -74,6 +74,20 @@
     font-family: 'orbitron500';
 }
 
+.more-btn:hover {
+    background: #E6EBF1;
+}
+
+.more-btn:active {
+    background: #DBE0E5;
+}
+
+.more-btn:disabled {
+    background-color: #EBEBEB;
+    color: #AAAAAA;
+    border: 2px solid #AAAAAA;
+}
+
 @media (max-width: 1480px) {
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);

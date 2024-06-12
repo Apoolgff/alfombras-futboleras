@@ -32,7 +32,7 @@ const Blocks = () => {
     <article className="split-component">
                 {/*Primer bloque*/}
                 
-                    <img src="/images/galeria/image9.webp" alt="Messi" className="block-item-1" />
+                    <img src="/images/galeria/image9.webp" alt="Messi" className="block-item-1" loading="lazy"/>
                     <div className="block block-item-2">
                         <h2>Fútbol bajo tus pies</h2>
                         <p>Descubre cómo convertimos tu amor por el fútbol en alfombras
@@ -54,12 +54,12 @@ const Blocks = () => {
                         resistente y capaz de resistir el paso del tiempo.</p>
                         <Link to="/nosotros" onClick={(e) => handleSmoothScroll(e, 'como')} className="btn">Como lo hacemos</Link>
                     </div>
-                    <img src="/images/galeria/image11.webp" alt="Copa" className="block-item-4" />
+                    <img src="/images/galeria/image11.webp" alt="Copa" className="block-item-4" loading="lazy"/>
                 
 
                 {/*Tercer bloque*/}
                 
-                    <img src="/images/galeria/image12.webp" alt="Firma" className="block-item-5" />
+                    <img src="/images/galeria/image12.webp" alt="Firma" className="block-item-5" loading="lazy"/>
                     <div className="block block-item-6">
                         <h2>Alfombras que reflejan tu estilo</h2>
                         <p>Con nuestro servicio de diseño a medida, puedes dejar volar tu 

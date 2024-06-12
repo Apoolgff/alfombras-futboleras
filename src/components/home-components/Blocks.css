@@ -67,6 +67,20 @@
     font-family: 'orbitron500';
 }
 
+.btn:hover {
+    background: #E6EBF1;
+}
+
+.btn:active {
+    background: #DBE0E5;
+}
+
+.btn:disabled {
+    background-color: #EBEBEB;
+    color: #AAAAAA;
+    border: 2px solid #AAAAAA;
+}
+
 @media (max-width: 1400px) {
 
     .split-component {

@@ -17,12 +17,12 @@ const Footer = () => {
         <footer className="footer">
             <div className="whatsapp">
                 <a className="whatsapp-link" href="https://wa.me/+5493516883680" >
-                    <img className="whatsapp-img" src="/images/iconos/Whatsapp.webp" alt="whatsapp" />
+                    <img className="whatsapp-img" src="/images/iconos/Whatsapp.webp" alt="whatsapp" loading="lazy" />
                 </a>
             </div>
             {/*Primera Seccion: Logo y Links*/}
             <div className="footer-logo-links">
-                <img src="/images/iconos/Logo.webp" alt="Logo" className="footer-logo" />
+                <img src="/images/iconos/Logo.webp" alt="Logo" className="footer-logo" loading="lazy" />
                 <div className="footer-links">
                     <Link to="/" onClick={handleScrollTop}>Inicio</Link>
                     <Link to="/contacto" onClick={handleScrollTop}>Contacto</Link>
@@ -35,13 +35,13 @@ const Footer = () => {
             {/*Segunda Seccion: Iconos de Redes Sociales*/}
             <div className="footer-social-icons">
                 <a href="https://www.instagram.com/alfombrasfutboleras?igsh=MW90ZHB2c2hpbDFoOQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/iconos/Instagram.webp" alt="Instagram" className="social-icon" />
+                    <img src="/images/iconos/Instagram.webp" alt="Instagram" className="social-icon"loading="lazy"/>
                 </a>
                 <a href="https://www.facebook.com/share/377He4Huujg14s2U/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/iconos/Facebook.webp" alt="Facebook" className="social-icon" />
+                    <img src="/images/iconos/Facebook.webp" alt="Facebook" className="social-icon"loading="lazy" />
                 </a>
                 <a href="https://www.tiktok.com/@alfombrasfutboleras?_t=8mEXkv26kMg&_r=1" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/iconos/TikTok.webp" alt="TikTok" className="social-icon" />
+                    <img src="/images/iconos/TikTok.webp" alt="TikTok" className="social-icon" loading="lazy"/>
                 </a>
             </div>
 
@@ -52,8 +52,8 @@ const Footer = () => {
 
             {/*Imagenes de Pelotas*/}
             <div className="footer-ball-images">
-                <img src="/images/iconos/BallBlueFooter.webp" alt="Football" className="ball ball-back" />
-                <img src="/images/iconos/BallRedFooter.webp" alt="Football" className="ball ball-front" />
+                <img src="/images/iconos/BallBlueFooter.webp" alt="Football" className="ball ball-back" loading="lazy"/>
+                <img src="/images/iconos/BallRedFooter.webp" alt="Football" className="ball ball-front" loading="lazy"/>
             </div>
         </footer>
     );

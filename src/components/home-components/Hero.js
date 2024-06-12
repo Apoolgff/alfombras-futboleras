@@ -9,12 +9,12 @@ const Hero = () => {
 
                 <p>Cuéntanos qué diseño quieres y lo hacemos realidad</p>
                 <div className="bars">
-                    <img className="bar-1" src="/images/iconos/bar.webp" alt="bar" />
-                    <img className="bar-2" src="/images/iconos/bar2.webp" alt="bar2" />
+                    <img className="bar-1" src="/images/iconos/bar.webp" alt="bar" loading="lazy"/>
+                    <img className="bar-2" src="/images/iconos/bar2.webp" alt="bar2" loading="lazy"/>
                 </div>
             </div>
             <div className="right-content">
-                <img className="logo" src="/images/iconos/LogoAF.webp" alt="Imagen 1" />
+                <img className="logo" src="/images/iconos/LogoAF.webp" alt="Imagen 1" loading="lazy"/>
             </div>
         </div>
     )
