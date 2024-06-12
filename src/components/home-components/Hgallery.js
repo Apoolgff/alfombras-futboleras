@@ -7,9 +7,9 @@ const Hgallery = () => {
         setTimeout(() => {
             window.scrollTo({
                 top: 0,
-                
+                behavior: 'smooth',
             });
-        }, );
+        }, 0);
     };
     const images = [
         { src: "/images/galeria/River.webp", title: "Escudo-River" },
