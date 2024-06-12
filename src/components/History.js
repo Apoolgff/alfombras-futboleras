@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-//import Slider from 'react-slick';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -29,8 +29,8 @@ const History = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true, // Esto centrará el carrusel
-        centerPadding: '0px', // Ajusta este valor según sea necesario para el espacio entre las imágenes
+        centerMode: true, 
+        centerPadding: '0px', 
         responsive: [{
             breakpoint: 380,
             settings:

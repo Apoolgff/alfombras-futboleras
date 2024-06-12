@@ -25,7 +25,7 @@ const Blocks = () => {
               behavior: 'smooth',
             });
           }
-        }, 300); // Ajusta este tiempo de espera según sea necesario
+        }, 300); 
       };
   return (
     <section>

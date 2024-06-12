@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hus.css'
 import { Link } from 'react-router-dom';
-//<button className="us-button">Sobre Alfombras Futboleras</button>
+
 
 const Hus = () => {
     const handleScrollTop = () => {
