@@ -23,7 +23,7 @@ import "./Gallery.css"
         { src: "/images/galeria/Andes.webp", title: "Escudo-Los andes" },
         { src: "/images/galeria/Boca.webp", title: "Escudo-Boca" },
         { src: "/images/galeria/Chicago.webp", title: "Escudo-Chicago"},
-        { src: "/images/galeria/Defbelgrano.webp", title: "Escudo-Def.Belgrano" },
+        { src: "/images/galeria/Defbelgrano.webp", title: "Escudo-Def.Belgrano (Personalizado)" },
         { src: "/images/galeria/Docksud.webp", title: "Escudo-Docksud" },
         { src: "/images/galeria/Indepte.webp", title: "Escudo-Independiente" },
         { src: "/images/galeria/Lanus.webp", title: "Escudo-Lanús" },
