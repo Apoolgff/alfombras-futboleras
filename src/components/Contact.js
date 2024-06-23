@@ -28,7 +28,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="form-group">
-                    <input type="hidden" name="access_key" value="key" />{/*fb0b369c-a110-4553-a5ce-91e77eea6cc7*/}
+                    <input type="hidden" name="access_key" value="fb0b369c-a110-4553-a5ce-91e77eea6cc7" />{/*fb0b369c-a110-4553-a5ce-91e77eea6cc7*/}
                         <label htmlFor="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required />
                     </div>
