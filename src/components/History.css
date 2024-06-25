@@ -54,6 +54,12 @@ background-color: #F2F6FA;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.history-image-block {
+    width: 450px;
+    height: 550px;
+    border-radius: 40px;
+}
+
 .history-grid p {
     font-size: 18px;
     word-spacing: 1px;
@@ -218,6 +224,10 @@ background-color: #F2F6FA;
         }
         .history-heading-carrousel {
             text-align: left;
+        }
+        .history-image-block {
+            width: 300px;
+            height: 350px;
         }
 
 }

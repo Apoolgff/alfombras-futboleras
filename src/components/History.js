@@ -76,9 +76,9 @@ const History = () => {
                         futbol y el voleibol. Dedicándome a este ultimo varios años,
                         hasta que tome la decisión de darle un giro a mi vida.</p>
 
-                    <img src="/images/nosotros_img/Rectangle-26.webp" alt="Trabajo" />
+                    <img src="/images/nosotros_img/nosotros.webp" alt="Trabajo" />
 
-                    <img className='item-3' src="/images/nosotros_img/Rectangle-27.webp" alt="alfombra sol" />
+                    <img className='item-3' src="/images/nosotros_img/city.webp" alt="alfombra sol" />
 
                     <p className='item-4' >No fue facil decidir dejar el deporte, ya que disfruto competir y
                         experimentar la emoción de las victorias, pero busqué
@@ -105,7 +105,7 @@ const History = () => {
                         dio el impulso para crear lo que ahora es <br />
                         <span className='p-red'>“Alfombras Futboleras”</span>.</p>
 
-                    <img src="/images/nosotros_img/Rectangle-28.webp" alt="Alfombra River" />
+                    <img src="/images/nosotros_img/afanosotros.webp" alt="Alfombra River" />
                 </div>
                 <p className='after-grid'>Desde ese momento, todo tomo forma, encontré un espacio donde mis pasiones se unen y me permite entregarles un producto que<br />
                     complementa también sus pasiones.</p>
@@ -134,7 +134,7 @@ const History = () => {
                         Esta técnica se utiliza en muchos lugares para realizar
                         alfombras y tapices, combinando diferentes texturas, colores y
                         patrones en diversos diseños y estilos.</p>
-                    <img src="/images/nosotros_img/Rectangle-36.webp" alt="Trabajo" className="history-image-block history-content-right" />
+                    <img src="/images/nosotros_img/huracannosotros.webp" alt="Trabajo" className="history-image-block history-content-right" />
                 </div>
             </article>
             <article className="history-section-carrousel">
