@@ -20,7 +20,7 @@
     margin-bottom: 10px; 
 }
 
-iframe{
+.iframe-map{
     border: solid 1px black;
         -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
@@ -47,7 +47,7 @@ iframe{
 
 form {
     width: 561.75px;
-    height: 574px;
+    height: 650px;
     background-color: #404F744D;
     border-radius: 15px;
     display: flex;
@@ -105,6 +105,17 @@ textarea {
     margin-top: 10px;
 }
 
+.recaptcha-container {
+    display: flex;
+    justify-content: center; /* Centra el reCAPTCHA horizontalmente */
+    margin-top: 5px; /* Ajusta el espacio superior según necesites */
+    margin-left: 60px;
+    transform: scale(0.80); /* Ajusta el tamaño del reCAPTCHA */
+    transform-origin: 0 0; /* Asegúrate de que el redimensionamiento ocurra desde la esquina superior izquierda */
+  }
+
+/* Contact.css */
+
 button[type="submit"] {
     background-blend-mode: rgb(14, 35, 68);
     background: -moz-linear-gradient(90deg, rgba(14, 35, 68, 1) 50%, rgba(64, 79, 116, 1) 100%);
@@ -120,6 +131,7 @@ button[type="submit"] {
     width: 118px;
     height: 47px;
     font-family: 'orbitron500';
+
 }
 
 button[type="submit"]:hover {
@@ -156,10 +168,10 @@ button[type="submit"]:disabled {
     }
     form {
         width: 375px;
-        height: 674px;
+        height: 720px;
         padding: 10px 10px 10 10px;
     }
-    iframe{
+    .iframe-map{
   
          width:365px;
          height:365px;

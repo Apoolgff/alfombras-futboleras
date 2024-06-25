@@ -82,6 +82,7 @@
 @media (max-width: 790px) {
     .hero {
         flex-direction: column;
+        margin-top: 30px;
     }
     .left-content h1 {
         color: #0E2344;
@@ -89,7 +90,8 @@
         font-size: 30px;
         padding: 10px;
         letter-spacing: 3px;
-        line-height: 68.97px;
+        line-height: 45px;
+        margin-top: 10px;
     }
     .left-content p{
         text-align: center;
@@ -98,12 +100,14 @@
         font-size: 20px;
         color: rgba(1, 4, 7, 1);
         line-height: 26.32px;
+        margin-bottom: -25px;
+        margin-top: 10px;
     }
     .bar-1, .bar-2{
         width: 259.33px;
         height: 26.86px;
     }
     .logo{
-        width: 200px;
+        width: 250px;
     }
 }

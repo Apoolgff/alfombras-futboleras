@@ -11,7 +11,7 @@ const History = () => {
     const imageArray = [
         { src: "/images/ptrabajos/akatsuki.webp", alt: "Imagen 1" },
         { src: "/images/ptrabajos/naranjayazul.webp", alt: "Imagen 2" },
-        { src: "/images/ptrabajos/jake.webp", alt: "Imagen 3" },
+        { src: "/images/ptrabajos/Jake.webp", alt: "Imagen 3" },
         { src: "/images/ptrabajos/Air.webp", alt: "Imagen 4" },
         { src: "/images/ptrabajos/Bryant.webp", alt: "Imagen 5" },
         { src: "/images/ptrabajos/Circulo.webp", alt: "Imagen 6" },
