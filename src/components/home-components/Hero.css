@@ -1,10 +1,11 @@
 .left-content h1 {
     color: #0E2344;
     font-family: 'orbitron500';
-    font-size: 55px;
-    padding: 50px;
-    letter-spacing: 3px;
-    line-height: 68.97px;
+    font-size: 65px;
+    margin: 5rem 0rem 3.5rem 7rem;
+    letter-spacing: 5px;
+    line-height: 80px;
+   
 }
 
 .left-content h1 span {
@@ -12,23 +13,31 @@
 }
 
 .left-content p{
-    padding-left: 60px;
+    
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: rgba(1, 4, 7, 1);
     line-height: 26.32px;
     font-family: 'yaldevi500';
+    letter-spacing: 2px;
+    margin: 2rem 0rem 0rem 7rem;
 }
 
 .hero {
     display: flex;
-    border-radius: 40px;
-    background-color: rgba(64, 79, 116, 0.3);
-    margin-top: 60px;
+    border-radius: 80px;
+    background-color: rgb(195, 200, 209);
+    margin-top: 40px;
     padding: 0px;
-    height: 540px;
+    height: 79vh;
     width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.hero-background {
+    /*background-image: url(../../../public/images/iconos/back-stadium.jpg);*/
+    background-size: cover;
+    border-radius: 80px;
+    background-attachment: fixed;
 }
 
 .left-content {
@@ -42,7 +51,7 @@
 .bars{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .bar-1, .bar-2{
@@ -59,10 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .logo{
-    width: 500px;
+    width: 600px;
     justify-self: end;
     align-self: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -111,7 +121,7 @@
   
 .logo-ball{
     position: absolute;
-    width: 207px;
+    width: 247px;
     justify-self: end;
     align-self: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

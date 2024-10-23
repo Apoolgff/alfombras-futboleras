@@ -3,6 +3,7 @@ import './Hero.css';
 
 const Hero = () => {
     return (
+        <div className="hero-background">
         <div className="hero">
             <div className="left-content">
                 <h1>Tu pasión hecha <br /> <span className="red-text">alfombra</span></h1>
@@ -17,6 +18,7 @@ const Hero = () => {
                 <img className="logo rotate-in-center" src="/images/iconos/LogoAF-empty.png" alt="Logo" loading="lazy"/>
                 <img className="logo-ball" src="/images/iconos/LogoAF-ball.png" alt="Logo-ball" loading="lazy"/>
             </div>
+        </div>
         </div>
     )
 }
