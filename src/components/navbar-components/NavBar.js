@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <header id="header" className="navbar">
             {/*Seccion del Logo*/}
-            <div className="logo">
+            <div className="logo-nav">
                 <Link to="/">
                     <img src="/images/iconos/Logo.webp" alt=" AF Logo" />
                 </Link>

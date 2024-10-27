@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     background-color: rgba(143, 153, 178, 0.25);
-    height: 492px;
+    
 }
 
 .footer-logo-links {
@@ -41,7 +41,7 @@
     align-items: center;
     background-color: rgba(143, 153, 178, 0.3);
     width: 100%;
-    height: 140px;
+    height: 160px;
 }
 
 .social-icon {
@@ -98,8 +98,8 @@
 }
 .whatsapp-img {
     position: fixed;
-    right: 20px;
-    bottom: 42px;
+    right: 40px;
+    bottom: 70px;
     height: 60px;
 }
  @media (max-width: 1366px) {

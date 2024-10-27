@@ -3,17 +3,19 @@
     justify-content: space-between;
     align-items: center;
     background-color: #8F99B266;
+    
     padding: 5px 20px ;
     font-family: 'yaldevi500';
     height: 96px;
 }
 
-.logo {
+.logo-nav {
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
 
-.logo img {
+.logo-nav img {
     text-decoration: none;
     color: #260E17;
     max-width: 140px;
@@ -47,13 +49,13 @@
         padding: 1rem;
     }*/
 
-    .logo {
+    .logo-nav {
         /*margin-bottom: 1rem;*/
         display: flex;
         align-items: center;
     }
 
-    .logo img {
+    .logo-nav img {
         text-decoration: none;
         color: #260E17;
         /*max-width: 100%;
