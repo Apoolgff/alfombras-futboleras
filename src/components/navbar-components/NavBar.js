@@ -13,7 +13,7 @@ const Navbar = () => {
             {/*Seccion del Logo*/}
             <div className="logo-nav">
                 <Link to="/">
-                    <img src="/images/iconos/Logo.webp" alt=" AF Logo" />
+                    <img src="/images/iconos/logoAF-empty" alt=" AF Logo" />
                 </Link>
             </div>
              {/*Seccion de Links*/}
