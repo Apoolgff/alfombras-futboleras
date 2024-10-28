@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import { useMediaQuery } from 'react-responsive';
 import Menu from './Menu';
 import HamburgerMenu from './HamburgerMenu';
 
-//Navbar con el logo que dirige hacia el inicio y los 4 links
 const Navbar = () => {
+    const [isRotating, setIsRotating] = useState(false);
     const isDesktopOrLaptop = useMediaQuery({ minWidth: 900 });
+
+    const handleLinkClick = () => {
+        setIsRotating(true);
+        setTimeout(() => setIsRotating(false), 1000); // Duración de la animación en ms
+    };
+
     return (
         <header id="header" className="navbar">
-            {/*Seccion del Logo*/}
             <div className="logo-nav">
-                <Link to="/">
-                    <img src="/images/iconos/logoAF-empty" alt=" AF Logo" />
+                <Link to="/" onClick={handleLinkClick}>
+                    <img className="logo-nav-image" src="/images/iconos/logoAF-empty.png" alt="AF Logo" />
+                    <img 
+                        className={`logo-nav-ball ${isRotating ? 'rotate' : ''}`} 
+                        src="/images/iconos/LogoAF-ball.png" 
+                        alt="Logo-ball" 
+                        loading="lazy"
+                    />
                 </Link>
             </div>
-             {/*Seccion de Links*/}
-             <div>
-            {isDesktopOrLaptop ? <Menu /> : <HamburgerMenu />}
+            <div>
+                {isDesktopOrLaptop ? <Menu onLinkClick={handleLinkClick} /> : <HamburgerMenu />}
             </div>
         </header>
     );

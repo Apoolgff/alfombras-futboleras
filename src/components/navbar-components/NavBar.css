@@ -10,18 +10,39 @@
 }
 
 .logo-nav {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: 30px;
 }
 
-.logo-nav img {
+.logo-nav-image {
+    position: relative;
     text-decoration: none;
     color: #260E17;
-    max-width: 140px;
-    max-height: 82px;
+    width: 83px;
+    height: 85px;
     margin-left: 10px;
+    z-index: 0;
 }
+.logo-nav-ball {
+    position: absolute;
+    text-decoration: none;
+    z-index: 2;
+    width: 34px;
+    height: 34.2px;
+    left: 34.6px;
+    top: 25.6px;
+    display: inline-block;
+    
+}
+
+  
+  .rotate {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+  }
+  
 
 .nav-links {
     display: flex;

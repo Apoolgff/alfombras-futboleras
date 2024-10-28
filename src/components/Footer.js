@@ -16,8 +16,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="whatsapp">
-                <a className="whatsapp-link" href="https://wa.me/+5493516883680" >
-                    <img className="whatsapp-img" src="/images/iconos/Whatsapp.webp" alt="whatsapp" loading="lazy" />
+                <a className="whatsapp-link " href="https://wa.me/+5493516883680" >
+                    <img className="whatsapp-img slide-in-blurred-bottom" src="/images/iconos/Whatsapp.webp" alt="whatsapp" loading="lazy" />
                 </a>
             </div>
             {/*Primera Seccion: Logo y Links*/}
