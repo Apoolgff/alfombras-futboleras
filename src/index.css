@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'orbitron500';
   src: url('/public/fonts/orbitron/Orbitron-Medium.ttf');

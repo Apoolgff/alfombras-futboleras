@@ -1,5 +1,9 @@
 .review-section{
-    padding: 50px;
+    padding: 150px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background-color: white;
 }
 .review-section h2{
     text-align: center;
@@ -7,6 +11,7 @@
     font-size: 30px;
     line-height: 37.62px;
     font-family: 'orbitron900';
+    margin-bottom: 100px;
 }
 .reviews {
     display: flex;
@@ -27,6 +32,7 @@
 .review3 {
     width: 564px;
     height: 288px;
+    transform: translateX(100px);
 }
 
 @media (max-width: 1480px) {
@@ -69,6 +75,7 @@
     .review3 {
         width: 274px;
         height: 144px;
+        transform: translateX(0px);
     }
 }
 

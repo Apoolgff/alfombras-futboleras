@@ -21,7 +21,7 @@
     text-decoration: none;
     color: #260E17;
     width: 83px;
-    height: 85px;
+    height: 83px;
     margin-left: 10px;
     z-index: 0;
 }
@@ -32,7 +32,7 @@
     width: 34px;
     height: 34.2px;
     left: 34.6px;
-    top: 25.6px;
+    top: 24.4px;
     display: inline-block;
     
 }
@@ -55,7 +55,10 @@
     padding: 0px 50px;
     text-decoration: none;
     color: #260E17;
-    border-right: 1.5px solid #BC0A0A;
+    border-right: 1.7px solid #BC0A0A;
+}
+.nav-item:hover {
+    color:  #BC0A0A;
 }
 
 .nav-item:last-child {

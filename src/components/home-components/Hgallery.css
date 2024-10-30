@@ -1,7 +1,7 @@
 .gallery-section {
     background-color: rgba(14, 35, 68, 1);
     border-radius: 15px;
-    padding: 20px;
+    padding: 70px 20px 20px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
     color: rgba(242, 246, 250, 1);
@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 30px;
     line-height: 37.62px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-family: 'orbitron900';
 }
 
@@ -49,6 +49,7 @@
     font-size: 18px;
     line-height: 22.57px;
     font-family: 'orbitron700';
+    margin-top: 20px;
 }
 
 .gallery-item p {

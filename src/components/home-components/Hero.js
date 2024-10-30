@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
             <div className="right-content">
                 <img className="logo rotate-in-center" src="/images/iconos/LogoAF-empty.png" alt="Logo" loading="lazy"/>
-                <img className="logo-ball" src="/images/iconos/LogoAF-ball.png" alt="Logo-ball" loading="lazy"/>
+                <img className="logo-ball bounce-in-fwd" src="/images/iconos/LogoAF-ball.png" alt="Logo-ball" loading="lazy"/>
             </div>
         </div>
         </div>
