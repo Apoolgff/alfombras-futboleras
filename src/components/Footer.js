@@ -6,14 +6,11 @@ import './Footer.css';
 // Footer - es bastante responsive solo hay algun tamaño de pantalla especifico donde las pelotas dan algun problema en cuanto al tamaño.
 //despues agregare otro media query para que quede bien en todos y ajustare un poco mas las dimensiones si hace falta.
 const Footer = () => {
-    const [footerInViewOnce, setFooterInViewOnce] = useState(false);
+    
     const { ref: footerRef, inView: footerInView } = useInViewHook(0.2);
 
-useEffect(() => {
-if (footerInView && !footerInViewOnce) {
- setFooterInViewOnce(true);
-}
-}, [footerInView, footerInViewOnce]);
+
+
     const handleScrollTop = () => {
         setTimeout(() => {
             window.scrollTo({
@@ -60,7 +57,7 @@ if (footerInView && !footerInViewOnce) {
             </div>
 
             {/*Imagenes de Pelotas*/}
-            <div  className={`footer-ball-images ${footerInViewOnce ? 'roll-in-left' : ''}`}>
+            <div  className={`footer-ball-images ${footerInView ? 'roll-in-left' : ''}`}>
                 <img src="/images/iconos/BallBlue.webp" alt="Football" className="ball ball-back" loading="lazy"/>
                 <img src="/images/iconos/BallRed.webp" alt="Football" className="ball ball-front" loading="lazy"/>
             </div>

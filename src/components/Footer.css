@@ -57,6 +57,7 @@
 }
 
 .footer-text {
+   
     text-align: center;
     background-color: rgba(143, 153, 178, 0.5);
     width: 100%;
@@ -67,6 +68,8 @@
 }
 
 .footer-text h3 {
+    position: relative;
+    z-index: 1;
     font-size: 16px;
     line-height: 20.06px;
     font-family: 'orbitron600';
@@ -198,7 +201,8 @@
  @media (max-width: 1366px) {
     .ball {
         width: 161px;
-        height: 90px;
+        height: 161px;
+        bottom: -45px;
     }
 
     .ball-back {
@@ -217,7 +221,7 @@
 
     .ball {
         width: 100px;
-        height: 56px;
+        height: 100px;
     }
 
     .ball-back {
@@ -225,7 +229,7 @@
     }
 
     .footer-text {
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .footer-text h3 {
