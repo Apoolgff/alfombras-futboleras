@@ -6,10 +6,10 @@ const HowToBuy = () => {
     return (
        <section className="buy">
             <div className="buy-heading">
-                <h1>¿Cómo comprar?</h1>
+                <h1 className='text-focus-in'>¿Cómo comprar?</h1>
                 <div className="buy-heading-bars">
-                    <img className="fixed-bar" src="/images/iconos/bar.webp" alt="barra clara"/>
-                    <img className="transitioned-bar" src="/images/iconos/bar2.webp" alt="barra oscura"/>
+                    <img className="fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara"/>
+                    <img className="transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura"/>
                 </div>    
             </div>
             

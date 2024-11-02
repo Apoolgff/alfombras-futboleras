@@ -4,7 +4,7 @@ import useInViewHook from '../../hooks/useInViewHook';
 
 const Reviews = () => {
     const { ref: clientRef, inView: clientInView } = useInViewHook(0.1);
-    const { ref: reviewRef, inView: reviewInView } = useInViewHook(0.2);
+    const { ref: reviewRef, inView: reviewInView } = useInViewHook(0.1);
     
     const [clientCount, setClientCount] = useState(0);
    

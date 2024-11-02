@@ -59,10 +59,10 @@ const History = () => {
         <section >
 
             <div className="history-heading">
-                <h3>Mi historia</h3>
+                <h3 className='text-focus-in'>Mi historia</h3>
                 <div className="history-heading-bars">
-                    <img className="history-fixed-bar" src="/images/iconos/bar.webp" alt="barra clara" />
-                    <img className="history-transitioned-bar" src="/images/iconos/bar2.webp" alt="barra oscura" />
+                    <img className="history-fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara" />
+                    <img className="history-transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura" />
                 </div>
             </div>
             <article>

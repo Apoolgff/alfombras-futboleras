@@ -1,10 +1,14 @@
 
+.buy {
+    overflow: hidden;
+}
 .buy-heading {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 257px;
-    
+    position: relative;
+    overflow: hidden;
 }
 .buy-heading h1 {
     font-size: 24px;
@@ -16,7 +20,7 @@
     right: 0;
     display: flex;
     flex-direction: column;
-   
+    max-width: 100%;
 }
 .buy-heading-bars img {
     width: 259.33px;
@@ -69,6 +73,36 @@
     font-family: 'yaldevi500';
 }
 
+
+@media (min-width: 768px) {
+    .step-one, .step-two, .step-three{
+        margin: 15px;
+        height: 184px;
+        width: 464px;
+    }
+    .step-title {
+        font-size: 35px;
+        margin-bottom: 24px;
+    }
+    .step-description  {
+        font-size: 18px;
+        line-height: 36px;
+        
+    }
+    .buy-heading-bars img {
+        width: 350px;
+        height: 36.26px;
+    }
+    .fixed-bar{
+        transform: scaleX(-1) scaleY(-1) translateY(-60px);
+        z-index: -2;
+    }
+    .transitioned-bar {
+        z-index: -1;
+        transform: scaleX(-1) scaleY(-1) translateY(-48px);
+    }
+}
+
 @media (min-width: 1366px ) {
     .step-one, .step-two, .step-three{
         /*display: flex;
@@ -103,31 +137,77 @@
         transform: scaleX(-1) scaleY(-1) translateY(12px);
     }
 }
-@media (min-width: 768px) {
-    .step-one, .step-two, .step-three{
-        margin: 15px;
-        height: 184px;
-        width: 464px;
-    }
-    .step-title {
-        font-size: 35px;
-        margin-bottom: 24px;
-    }
-    .step-description  {
-        font-size: 18px;
-        line-height: 36px;
-        
-    }
-    .buy-heading-bars img {
-        width: 350px;
-        height: 36.26px;
-    }
-    .fixed-bar{
-        transform: scaleX(-1) scaleY(-1) translateY(-60px);
-        z-index: -2;
-    }
-    .transitioned-bar {
-        z-index: -1;
-        transform: scaleX(-1) scaleY(-1) translateY(-48px);
-    }
+
+.slide-in-bar-1 {
+	-webkit-animation: scale-in-hor-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+
+@-webkit-keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(-0.5) scaleY(-1);
+              transform: scaleX(-0.5) scaleY(-1);
+              -webkit-transform-origin: right;
+                    transform-origin: right;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(-1) scaleY(-1);
+              transform: scaleX(-1) scaleY(-1);
+           
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(-0.9) scaleY(-1);
+              transform: scaleX(-0.9) scaleY(-1);
+              -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(-1) scaleY(-1);
+              transform: scaleX(-1) scaleY(-1);
+          
+      opacity: 1;
+    }
+  }
+  
+
+  .slide-in-bar-2 {
+	-webkit-animation: scale-in-hor-right-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-right-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-right-2 {
+    0% {
+      -webkit-transform: scaleX(-0.9) scaleY(-1) translateY(12px);
+              transform: scaleX(-0.9) scaleY(-1) translateY(12px);
+              -webkit-transform-origin: right;
+                    transform-origin: right;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(-1) scaleY(-1) translateY(12px);
+              transform: scaleX(-1) scaleY(-1) translateY(12px);
+           
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-right-2 {
+    0% {
+      -webkit-transform: scaleX(-0.9) scaleY(-1) translateY(12px);
+              transform: scaleX(-0.9) scaleY(-1) translateY(12px);
+              -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(-1) scaleY(-1) translateY(12px);
+              transform: scaleX(-1) scaleY(-1) translateY(12px);
+          
+      opacity: 1;
+    }
+  }

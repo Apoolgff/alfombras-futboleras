@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 
 
 const Hus = () => {
-    const [bannerInViewOnce, setBannerInViewOnce] = useState(false);
-    const { ref: bannerRef, inView: bannerInView } = useInViewHook(0.2);
+    const { ref: btnRef, inView: btnInView } = useInViewHook(0.1);
 
-useEffect(() => {
-if (bannerInView && !bannerInViewOnce) {
- setBannerInViewOnce(true);
-}
-}, [bannerInView, bannerInViewOnce]);
+    
+    const { ref: bannerRef, inView: bannerInView } = useInViewHook(0.1);
+
+
     const handleScrollTop = () => {
        
 
@@ -24,11 +22,11 @@ if (bannerInView && !bannerInViewOnce) {
         }, 0);
     };
   return (
-    <div ref={bannerRef} className="us-section">
+    <div className="us-section">
                 <div className="us-text">
                     <p>Mi nombre es Agustín Bruschini, soy de Córdoba Capital, Argentina.<br />
                         Entender de pasiones me permite dedicarle el tiempo y amor que cada alfombra necesita.</p>              
-                    <Link to="/nosotros" onClick={handleScrollTop} className="us-button">Sobre Alfombras Futboleras</Link>
+                    <Link ref={btnRef} to="/nosotros" onClick={handleScrollTop} className={`us-button ${btnInView? 'btn-animation' : ''}`}>Sobre Alfombras Futboleras</Link>
                 </div>
                 <div className='us-icons' >
                     <h3>Seguinos en nuestras Redes Sociales!</h3>
@@ -43,8 +41,8 @@ if (bannerInView && !bannerInViewOnce) {
                             <img src="/images/iconos/TikTok.webp" alt="TikTok" className="social-icon" loading="lazy" />
                         </a>
                     </div>
-                    <div   className={`us-image ${bannerInViewOnce ? 'roll-in-right' : ''}`}>
-                        <img src="/images/iconos/BallBlue.webp" alt="Pelota Azul" className="us-ball" loading="lazy"/>
+                    <div ref={bannerRef} className='us-image'>
+                        <img   src="/images/iconos/BallBlue.webp" alt="Pelota Azul" className={`us-ball ${bannerInView ? 'roll-in-right' : ''}`} loading="lazy"/>
                     </div>
                 </div>
             </div>

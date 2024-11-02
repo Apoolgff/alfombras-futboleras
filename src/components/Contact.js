@@ -95,10 +95,10 @@ const Contact = () => {
   return (
     <section>
       <div className="buy-heading">
-        <h1>Contactame</h1>
-        <div className="buy-heading-bars">
-          <img className="fixed-bar" src="/images/iconos/bar.webp" alt="barra clara" loading="lazy" />
-          <img className="transitioned-bar" src="/images/iconos/bar2.webp" alt="barra oscura" loading="lazy" />
+        <h1 className='text-focus-in'>Contactame</h1>
+        <div className="buy-heading-bars ">
+          <img className="fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara" loading="lazy" />
+          <img className="transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura" loading="lazy" />
         </div>
       </div>
 

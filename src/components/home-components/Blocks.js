@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import useInViewHook from '../../hooks/useInViewHook';
 import { Link, useNavigate } from 'react-router-dom';
 import './Blocks.css'
 
 const Blocks = () => {
     const navigate = useNavigate();
+    const { ref: firstBlockRef, inView: firstBlockInView } = useInViewHook(0.1);
+    const { ref: secondBlockRef, inView: secondBlockInView } = useInViewHook(0.1);
+    const { ref: thirdBlockRef, inView: thirdBlockInView } = useInViewHook(0.1);
+
+    
 
     const handleScrollTop = () => {
         setTimeout(() => {
@@ -33,7 +39,7 @@ const Blocks = () => {
                 {/*Primer bloque*/}
                 
                     <img src="/images/galeria/riverh.webp" alt="Messi" className="block-item-1" loading="lazy"/>
-                    <div className="block block-item-2">
+                    <div ref={firstBlockRef}  className={`block block-item-2 ${firstBlockInView? 'block-animation' : ''}`}>
                         <h2>Fútbol bajo tus pies</h2>
                         <p>Descubre cómo convertimos tu amor por el fútbol en alfombras
                         únicas que no solo adornan tu hogar, sino que también cuentan
@@ -45,7 +51,7 @@ const Blocks = () => {
 
                 {/*Segundo bloque*/}
                 
-                    <div className="block block-item-3">
+                    <div ref={secondBlockRef} className={`block block-item-3 ${secondBlockInView? 'block-animation' : ''}`}>
                         <h2>Calidad tejida con precisión</h2>
                         <p>Experimenta la calidad excepcional que ofrecemos a través de 
                         nuestro método de tufting, una técnica artesanal que fusiona
@@ -59,8 +65,8 @@ const Blocks = () => {
 
                 {/*Tercer bloque*/}
                 
-                    <img src="/images/galeria/eldiego10.webp" alt="Firma" className="block-item-5" loading="lazy"/>
-                    <div className="block block-item-6">
+                    <img src="/images/galeria/eldiego10.webp" alt="Firma del Diego" className="block-item-5" loading="lazy"/>
+                    <div ref={thirdBlockRef} className={`block block-item-6 ${thirdBlockInView? 'block-animation' : ''}`}>
                         <h2>Alfombras que reflejan tu estilo</h2>
                         <p>Con nuestro servicio de diseño a medida, puedes dejar volar tu 
                         creatividad y crear una alfombra que sea verdaderamente tuya. 

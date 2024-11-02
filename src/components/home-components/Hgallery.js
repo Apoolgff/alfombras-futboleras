@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import useInViewHook from '../../hooks/useInViewHook';
 import { Link } from 'react-router-dom';
 import './Hgallery.css'
 
 const Hgallery = () => {
+    const { ref: btnRef, inView: btnInView } = useInViewHook(0.1);
+
     const handleScrollTop = () => {
         setTimeout(() => {
             window.scrollTo({
@@ -34,7 +37,7 @@ const Hgallery = () => {
                         ))}
                     </div>
                 </div>
-                <Link to="/galeria"  className="more-btn" onClick={handleScrollTop}>Ver toda la Galeria</Link>
+                <Link ref={btnRef} to="/galeria"  className={`more-btn ${btnInView? 'btn-animation' : ''}`} onClick={handleScrollTop}>Ver toda la Galeria</Link>
             </div>
   )
 }
