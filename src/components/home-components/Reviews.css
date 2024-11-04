@@ -86,9 +86,13 @@
     .review-section{
         padding: 20px;
     }
+    .review-section h2{
+        margin-top: 20px;
+        font-size: 20px;
+    }
     .reviews {
         align-items: center;
-        padding: 10px;
+        padding: 0px 0px 10px 0px;
     }
     .review1{
         width: 230px;

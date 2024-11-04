@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .us-icons h3 {
@@ -73,6 +74,7 @@
 
 .us-links {
     margin: 10px;
+    z-index: 1;
 }
 .us-links img {
     margin: 10px 50px;

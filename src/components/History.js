@@ -1,5 +1,5 @@
-import React, { lazy, Suspense } from 'react';
-
+import React, { lazy, Suspense, useEffect, useState  } from 'react';
+import useInViewHook from '../hooks/useInViewHook';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -7,6 +7,9 @@ import "./History.css"
 const Slider = lazy(() => import('react-slick'));
 
 const History = () => {
+    const { ref: firstImageRef, inView: firstImageInView } = useInViewHook(0.1);
+    const { ref: secondImageRef, inView: secondImageInView } = useInViewHook(0.1);
+    const { ref: thirdImageRef, inView: thirdImageInView } = useInViewHook(0.1);
 
     const imageArray = [
         { src: "/images/ptrabajos/akatsuki.webp", alt: "Imagen 1" },
@@ -56,13 +59,13 @@ const History = () => {
         ]
     };
     return (
-        <section >
+        <section className="buy">
 
-            <div className="history-heading">
-                <h3 className='text-focus-in'>Mi historia</h3>
-                <div className="history-heading-bars">
-                    <img className="history-fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara" />
-                    <img className="history-transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura" />
+            <div className="buy-heading">
+                <h1 className='text-focus-in'>Mi historia</h1>
+                <div className="buy-heading-bars">
+                    <img className="fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara" />
+                    <img className="transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura" />
                 </div>
             </div>
             <article>
@@ -76,9 +79,9 @@ const History = () => {
                         futbol y el voleibol. Dedicándome a este ultimo varios años,
                         hasta que tome la decisión de darle un giro a mi vida.</p>
 
-                    <img src="/images/nosotros_img/nosotros.webp" alt="Trabajo" />
+                    <img ref={firstImageRef} className={`item-2 ${firstImageInView? 'image-animation' : ''}`} src="/images/nosotros_img/nosotros.webp" alt="Trabajo" />
 
-                    <img className='item-3' src="/images/nosotros_img/city.webp" alt="alfombra sol" />
+                    <img ref={secondImageRef}  className={`item-3 ${secondImageInView? 'image-animation' : ''}`} src="/images/nosotros_img/city.webp" alt="alfombra sol" />
 
                     <p className='item-4' >No fue facil decidir dejar el deporte, ya que disfruto competir y
                         experimentar la emoción de las victorias, pero busqué
@@ -105,7 +108,7 @@ const History = () => {
                         dio el impulso para crear lo que ahora es <br />
                         <span className='p-red'>“Alfombras Futboleras”</span>.</p>
 
-                    <img src="/images/nosotros_img/afanosotros.webp" alt="Alfombra River" />
+                    <img ref={thirdImageRef} className={`item-6 ${thirdImageInView? 'image-animation' : ''}`}  src="/images/nosotros_img/afanosotros.webp" alt="Alfombra River" />
                 </div>
                 <p className='after-grid'>Desde ese momento, todo tomo forma, encontré un espacio donde mis pasiones se unen y me permite entregarles un producto que<br />
                     complementa también sus pasiones.</p>

@@ -41,12 +41,12 @@ import "./Gallery.css"
     return(
         <section>
             <article>
-                <div>
-                    <div className="gallery-heading">
-                        <h3 className='text-focus-in'>Galeria</h3>
-                        <div className="gallery-heading-bars">
-                            <img className="gallery-fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara"/>
-                            <img className="gallery-transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura"/>
+                <div className="buy">
+                    <div className="buy-heading">
+                        <h1 className='text-focus-in'>Galeria</h1>
+                        <div className="buy-heading-bars">
+                            <img className="fixed-bar slide-in-bar-1" src="/images/iconos/bar.webp" alt="barra clara"/>
+                            <img className="transitioned-bar slide-in-bar-2" src="/images/iconos/bar2.webp" alt="barra oscura"/>
                         </div>    
                     </div>
                     <div className="g-gallery-section">
