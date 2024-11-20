@@ -2,7 +2,7 @@
     color: #0E2344;
     font-family: 'orbitron500';
     font-size: 65px;
-    margin: 5rem 0rem 3.5rem 7rem;
+    margin: 0rem 0rem 3.5rem 7rem;
     letter-spacing: 5px;
     line-height: 80px;
    
@@ -58,8 +58,8 @@
     border-radius: 80px;
     background-color: rgb(195, 200, 209);
     margin-top: 40px;
-    padding: 0px;
-    height: 79vh;
+    padding:  80px 0;
+    height: 100%;
     width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -138,7 +138,7 @@
     justify-self: end;
     align-self: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-   
+  
 }
 .rotate-in-center {
 	-webkit-animation: rotate-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -368,7 +368,7 @@
        
         letter-spacing: 3px;
         line-height: 45px;
-        margin:60px auto 0px;
+        margin:0px auto 0px;
     }
     .left-content p{
         text-align: center;
@@ -376,7 +376,7 @@
         font-size: 18px;
         color: rgba(1, 4, 7, 1);
         padding: 0;
-        margin: 1rem 0rem 0rem 1rem;
+        margin: 1rem 0rem 2rem 1rem;
     }
     .bars {
         margin-top: 10px;
